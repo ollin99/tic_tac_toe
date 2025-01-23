@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../CSS/game.css">
+    <link rel="stylesheet" href="../CSS/scoreboard.css"> 
+    <title>Tic-Tac-Toe</title>
+</head>
+<body>
+    <section id="game">
+  <h1>Tic-Tac-Toe</h1>
+  <article id="board">
+   
+  </article>
+  <p id="status"></p>
+  <button id="btn-back">Back to Menu</button>
+</section>
+
+<section class="modal" id="game-over-modal">
+  <article class="modal-content">
+    <span class="close-button" id="close-gameover-modal">&times;</span>
+    <h2 id="game-over-title"></h2>
+    <p id="game-over-text"></p>
+    <section class="modal-buttons">
+      <button id="btn-restart">Restart Game</button>
+      <button id="btn-menu">Menu</button>
+      <button id="btn-scoreboard">Show Scoreboard</button>
+    </section>
+  </article>
+</section>
+
+<section class="modal" id="scoreboard-modal">
+  <article class="modal-content">
+    <span class="close-button" id="close-modal">&times;</span> 
+    <section id="scoreboard"></section>
+  </article>
+</section>
+
+<script src="../JS/scoreboard.js"></script>
+<script src="../JS/game_logic.js"></script>
+</body>
+</html>
